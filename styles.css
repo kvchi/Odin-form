@@ -1,4 +1,4 @@
-p {
+h3 {
     color: rgb(255, 255, 255);
     font-size: 20px;
     background-color: black;
@@ -16,7 +16,7 @@ h1 {
    
     margin: 40px;
 }
-body {
+.main {
     display: flex;
     margin: 0;
 }
@@ -36,7 +36,7 @@ img {
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0, 0.5);
-    width: 37%;
+    width: 36.5%;
     padding: 10px;
    
     
@@ -122,3 +122,107 @@ span {
     font: 500;
     font-size: large;
 }
+
+.container {
+    width: 500px;
+    height: auto;
+    display: grid;
+    grid-template: 100px 100px 100px 100px 100px 100px / 100px 100px 100px 100px 100px 100px;
+    gap: 15px; 
+    margin-top: 10px;
+  }
+
+  .header {
+    border: 1px solid;
+    font-size: xx-large;
+    text-align: center;
+    background-color: rgb(33, 115, 81);
+    grid-column-start: 1;
+    grid-column-end: 7;
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+    
+  }
+
+  .sidebar {
+    border: 1px solid;
+    font-size: xx-large;
+    text-align: center;
+    background-color: rgb(68, 110, 169);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+  }
+
+  .nav {
+    border: 1px solid;
+    font-size: xx-large;
+    text-align: center;
+    background-color: rgb(89, 25, 192);
+    grid-column-start: 3;
+    grid-column-end: 7;
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+  }
+
+  .art {
+    border: 1px solid;
+    font-size: xx-large;
+    text-align: center;
+    background-color: rgb(164, 75, 205);
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+  }
+
+  .footer {
+    border: 1px solid;
+    font-size: xx-large;
+    text-align: center;
+    background-color: rgb(71, 71, 71);
+    grid-column-start: 1;
+    grid-column-end: 7;
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+
+  }
+
+  .grid-container {
+    resize: horizontal;
+    overflow: hidden;
+    display: grid;
+    gap: 4px;
+    padding: 4px;
+    border: 1px solid grey;
+    background-color: skyblue;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, clamp(150px, 20%, 200px)) ;
+  }
+  
+  .grid-item {
+    background-color: #444;
+    text-align: center;
+    color: #ddd;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    padding: 12px;
+  }
+  
+  p {
+    margin: 12px auto 24px;
+  }
+  
+  img {
+    height: 60px;
+  }
